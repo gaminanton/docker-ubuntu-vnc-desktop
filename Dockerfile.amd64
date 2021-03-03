@@ -47,7 +47,7 @@ RUN apt update \
     && apt autoremove -y \
     && rm -rf /var/lib/apt/lists/*
     
-RUN apt update -y && apt upgrade -y    
+RUN apt update -y && apt upgrade -y && apt install -y virtualbox     
 
 
 # Additional packages require ~600MB
